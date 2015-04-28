@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>ADC39C94-24A5-467D-A76E-F6F6A27EC94E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>64BF2801-1E4F-49D8-8C3F-2B364CEA1C3C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>SWC</string>
+	<key>description</key>
+	<string>Add a new event to Calendar</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>New Calendar Event</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>neve</string>
+				<key>subtext</key>
+				<string>Creates a new calendar event</string>
+				<key>text</key>
+				<string>New Calendar Event</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>ADC39C94-24A5-467D-A76E-F6F6A27EC94E</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>set newAppt to "{query}" as string
+
+tell application "Calendar" to activatetell application "System Events"	keystroke "n" using {command down}	keystroke newAppt	keystroke returnend tell</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>64BF2801-1E4F-49D8-8C3F-2B364CEA1C3C</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>64BF2801-1E4F-49D8-8C3F-2B364CEA1C3C</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>ADC39C94-24A5-467D-A76E-F6F6A27EC94E</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
